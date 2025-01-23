@@ -24,46 +24,36 @@ tky/
 
 How to Run the Project
 1. Clone the Repository
-bash
-git clone git@github.com:tkyhkyeung/Django_Webpage_Project.git
-cd Django_Webpage_Project
+`git clone git@github.com:tkyhkyeung/Django_Webpage_Project.git
+cd Django_Webpage_Project`
 2. Set Up the Virtual Environment
-bash
-python3 -m venv venv
+`python3 -m venv venv
 source venv/bin/activate  # For macOS/Linux
-venv\Scripts\activate     # For Windows
+venv\Scripts\activate     # For Windows`
 3. Install Dependencies
-bash
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 4. Apply Migrations and Populate Data
-bash
-python manage.py makemigrations
+`python manage.py makemigrations
 python manage.py migrate
-python populate_data.py  # Populate the database with sample data
+python populate_data.py  # Populate the database with sample data`
 5. Run the Server
-bash
-python manage.py runserver
+`python manage.py runserver`
 Access the application at http://127.0.0.1:8000/.
 Scripts
 1. Populate Data
 Populates the database with at least 20 records for each model:
-bash
-python populate_data.py
+`python populate_data.py`
 2. Clean and Format Data
 Cleans duplicate records and formats names:
-bash
-python data_cleaning.py
+`python data_cleaning.py`
 3. Import/Export Data
 Export data to person_data.csv:
-bash
-python data_import_export.py  # Exports by default.
+`python data_import_export.py  # Exports by default.`
 Import data from person_data.csv:
 Uncomment the import_data() function in data_import_export.py and run:
-bash
-python data_import_export.py
+`python data_import_export.py`
 Django Admin Panel
 To access the admin panel:
 Create a superuser:
-bash
-python manage.py createsuperuser
+`python manage.py createsuperuser`
 Visit http://127.0.0.1:8000/admin and log in.
